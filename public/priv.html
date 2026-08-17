@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Clés privées</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<nav class="topnav">
+  <div class="nav-left">
+    <span class="nav-title">Mylibrarypki</span>
+  </div>
+  <div class="nav-right">
+    <a href="dashboard.html">Dashboard</a>
+    <a href="pub.html">Clés publiques</a>
+    <a href="priv.html">Clés privées</a>
+    <span id="serverStatus" style="margin-left:12px;font-size:12px;color:#9aa;">Server: ?</span>
+  </div>
+</nav>
+
+<h1>Clés privées</h1>
+
+<div class="container">
+
+  <div class="section">
+    <h2>Uploader</h2>
+    <input type="file" id="fileInput">
+    <input type="text" id="preDesc" placeholder="Description">
+    <input type="text" id="preTags" placeholder="Tags (séparés par ,)">
+    <select id="uploadType">
+      <option value="">Détecter automatiquement</option>
+      <option value="pub">Clé publique</option>
+      <option value="priv">Clé privée</option>
+    </select>
+    <button class="btn" id="addLocalBtn">Ajouter (local)</button>
+  </div>
+
+  <div class="section">
+    <h2>Inventaire</h2>
+    <div id="privList" class="list"></div>
+  </div>
+
+  <div class="section">
+    <h2>Aperçu</h2>
+
+    <div class="preview-field"><label>CN</label><span id="previewCN">—</span></div>
+    <div class="preview-field"><label>Issuer</label><span id="previewIssuer">—</span></div>
+    <div class="preview-field"><label>SAN</label><span id="previewSAN">—</span></div>
+    <div class="preview-field"><label>Validité</label><span id="previewValidity">—</span></div>
+    <div class="preview-field"><label>SHA-256</label><span id="previewSHA">—</span></div>
+
+    <div class="preview-field"><label>Tags</label><input id="previewTags"></div>
+    <div class="preview-field"><label>Description</label><textarea id="previewDesc"></textarea></div>
+
+    <button class="btn" id="saveBtn" disabled>Enregistrer</button>
+    <button class="btn" id="removeBtn" disabled>Supprimer</button>
+    <button class="btn" id="exportPemBtn" disabled>Exporter PEM</button>
+  </div>
+
+</div>
+
+<script src="js/app.js?v=2"></script>
+<script src="js/upload.js?v=2"></script>
+<script src="js/inventory.js?v=2"></script>
+<script src="js/preview.js?v=2"></script>
+
+</body>
+</html>

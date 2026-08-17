@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Dashboard</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<nav class="topnav">
+  <span class="nav-title">Mylibrarypki</span>
+  <div class="nav-right">
+    <a href="dashboard.html">Dashboard</a>
+    <a href="pub.html">Clés publiques</a>
+    <a href="priv.html">Clés privées</a>
+  </div>
+</nav>
+
+<h1>Dashboard</h1>
+
+<div class="container">
+
+  <div class="section">
+    <h2>Résumé</h2>
+    <div class="preview-field"><label>Total certificats</label><span id="statTotal">—</span></div>
+    <div class="preview-field"><label>Clés publiques</label><span id="statPub">—</span></div>
+    <div class="preview-field"><label>Clés privées</label><span id="statPriv">—</span></div>
+  </div>
+
+  <div class="section">
+    <h2>Expiration</h2>
+    <div class="preview-field"><label>Expirant dans 30 jours</label><span id="statExp30">—</span></div>
+    <div class="preview-field"><label>Expirant dans 90 jours</label><span id="statExp90">—</span></div>
+  </div>
+
+  <div class="section">
+    <h2>Derniers ajouts</h2>
+    <ul id="statRecent"></ul>
+  </div>
+
+</div>
+
+<script src="js/app.js?v=2"></script>
+<script src="js/dashboard.js?v=2"></script>
+
+</body>
+</html>

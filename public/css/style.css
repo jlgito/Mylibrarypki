@@ -1,0 +1,165 @@
+/* ====== RESET ====== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Roboto, sans-serif;
+}
+
+body {
+  background: #1e1f22;
+  color: #e5e5e5;
+  padding: 20px;
+}
+
+/* ====== TOP NAV ====== */
+.topnav {
+  background: #2a2b2f;
+  padding: 12px 20px;
+  border-radius: 8px;
+  margin-bottom: 25px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 0 4px #0005;
+}
+
+.nav-title {
+  font-size: 20px;
+  font-weight: bold;
+  color: #7abaff;
+}
+
+.nav-right a {
+  color: #e5e5e5;
+  text-decoration: none;
+  margin-left: 20px;
+  font-size: 15px;
+  transition: 0.2s;
+}
+
+.nav-right a:hover {
+  color: #7abaff;
+}
+
+/* ====== HEADERS ====== */
+h1 {
+  margin-bottom: 20px;
+  font-size: 26px;
+  color: #7abaff;
+}
+
+/* ====== LAYOUT 3 COLONNES ====== */
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr; /* 3 colonnes */
+  gap: 25px;
+  align-items: start;
+}
+
+/* ====== SECTIONS ====== */
+.section {
+  background: #2a2b2f;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 0 4px #0005;
+}
+
+.section h2 {
+  margin-bottom: 10px;
+  font-size: 18px;
+  color: #7abaff;
+}
+
+/* ====== BUTTONS ====== */
+.btn {
+  background: #0078ff;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 5px;
+  color: white;
+  cursor: pointer;
+  margin-right: 6px;
+  transition: 0.2s;
+}
+
+.btn:hover {
+  background: #3399ff;
+}
+
+.btn:disabled {
+  background: #555;
+  cursor: not-allowed;
+}
+
+/* ====== INPUTS ====== */
+input[type="text"],
+input[type="file"],
+textarea,
+select {
+  width: 100%;
+  padding: 8px;
+  margin-top: 6px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  border: none;
+  background: #3a3b40;
+  color: #fff;
+}
+
+textarea {
+  height: 80px;
+  resize: vertical;
+}
+
+/* ====== INVENTORY LIST ====== */
+.list {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.item {
+  background: #333438;
+  padding: 10px;
+  border-radius: 6px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.item.selected {
+  border: 2px solid #0078ff;
+}
+
+.item-checkbox {
+  transform: scale(1.2);
+  margin-right: 10px;
+}
+
+.meta .name {
+  font-weight: bold;
+  color: #fff;
+}
+
+.meta .sub {
+  font-size: 12px;
+  color: #bbb;
+}
+
+/* ====== PREVIEW ====== */
+.preview-field {
+  margin-bottom: 10px;
+}
+
+.preview-field label {
+  font-size: 13px;
+  color: #9abaff;
+}
+
+.preview-field span,
+.preview-field input,
+.preview-field textarea {
+  display: block;
+  margin-top: 4px;
+}
